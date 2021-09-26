@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="employment"action="send.php"method="post">
+        <table width="50%" border="1" cellspacing="2" cellpadding="2" bordercolor="red" >
+            <tr>
+                <td> Employment Application</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fname" maxlength="50"/></td>
+            </tr>
+            <tr>
+                <td>Last Name </td>
+                <td><input type="text" name="fname" maxlength="50"/></td>
+            </tr>
+            <tr>
+                <td>Position</td>
+                <td>
+                    <select name="position">
+                        <option value="PR">Proffessor</option>
+                        <option value="AS"> Associate Proffessor</option>
+                        <option value="AP">Assistant Proffessor</option>
+                        <option value="LE">Lecturer</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Experience</td>
+                <td>
+                    
+                    <select name="experience">
+                        <option value="SE">Senior</option>
+                        <option value="EL"> Elder Senior</option>
+                        <option value="JU">Junior</option>
+                        <option value="NU">New</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Job type</td>
+                <td><input type="checkbox" name="ft"/>FULL-TIME
+                    <input type="checkbox" name="pt"/>PART-TIME
+                        <input type="checkbox" name="ct"/>CONTRACT
+                </td>
+            </tr>
+            <tr>
+                <td>Maritial status</td>
+                <td>
+                    <input type="radio" name="mstatus" value="Unmarried"/>Unmarried
+                    <input type="radio" name="mstatus" value="married"/>Married
+                                </td>
+            </tr>
+            <tr>
+                <td>Additional Comments</td>
+                <td><textarea name="comments" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="submit" value="submit"/>
+                    <input type="reset" name="reset" value="reset"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
