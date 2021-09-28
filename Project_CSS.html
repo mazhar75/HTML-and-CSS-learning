@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style type="text/css">
+     body{
+         margin:0;
+         padding:0;
+         line-height:1.5em;
+     }
+     #header{
+         background:black;
+         font-family:arial;
+         height:100px;
+     }
+     #contentwrapper{
+         float:left;
+         width:100%;
+     }
+     #contentcolumn{
+         margin:0 230px 0 230px;
+     }
+     #leftcolumn{
+         float:left;
+         width:230px;
+         margin-left:-100%;
+         background:#24c8ff;
+     }
+     #rightcolumn{
+         float:left;
+         width:230px;
+         margin-left:-230%;
+         background:#24c8ff;
+     }
+     .innertext{
+         margin:20px;
+         font-family:arial;
+         color:#5E5E5E;
+     }
+     #footer{
+         clear:left;
+         width:100%;
+         background:black;
+         color:#FFF;
+         font-family:arial;
+         text-align:center;
+         padding:4px;
+     }
+     ul{
+         list-style-type:none;
+         margin:0;
+         padding:0;
+         background-color:#000;
+     }
+     li{
+         float:left;
+         border-right: 1px solid #bbb;
+     }
+     li:last-child{
+         border-right:none;
+     }
+     li a{
+         display:black;
+         color:white;
+         text-align:center;
+         padding: 14px 16px;
+         text-decoration:none;
+     }
+     li a:hover:not(.active){
+         background-color: #808080;
+     }
+     .active{
+         background-attachment:#0099ff;
+     }
+     /* ##### Responsive layout in CSS ##### */
+     @media(max-width:840px){/*Drop right column down*/
+
+     #leftcolumn{
+         margin-left:-100%;
+
+     }
+     #rightcolumn{
+         float:none;
+         width:100%;
+         margin-left:0;
+         clear:both;
+
+     }
+     #contentcolumn{
+         margin-right:0;
+     }}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <ul style="display:inline;">
+            <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">About</a></li>
+        <li><a href="#contact">News</a></li>
+        <li><a href="#about">Contact</a></li>
+    </ul>
+        </div>
+    </div>
+    <div id="contentwrapper">
+        <div id="contentcolumn">
+            <div class="innertext">
+                <b>WELCOME!</b><br/>My name is Mazharul Islam Nihad.I am from Habigonj,Bangladesh.My fathers name is Shafiqur Rahman and my mothers name is Nurun Nahar.I have 3 brothers and 1 sister.
+            </div>
+        </div>
+            <div id="leftcolumn">
+                <div class="innertext">
+                    <b>Left column:<em>230px</em></b><br/> It was long long when i was child .....................
+                </div>
+            </div>
+            <div id="rightcolumn">
+                <div class="innertext">
+                 <b>Right Column:<em>230px</em></b><br/>Nowdays i am falling depression again and again............
+                </div>
+            </div>
+        
+    </div>
+    <div id="footer">something..</div>
+
+    
+</body>
+</html>
